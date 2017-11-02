@@ -2,7 +2,7 @@
 .settings/
 .idea/
 target/
-out/
+outt/
 .classpath
 .project
 *.iml
