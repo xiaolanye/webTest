@@ -1,0 +1,19 @@
+.dept_table{
+    background-image: url(/IntegrityWeb/extjs/resources/img/dept_table.png) !important;
+}
+.dept_tree{
+    background-image: url(/IntegrityWeb/extjs/resources/img/dept_tree.png) !important;
+}
+.table_remove{
+	background-image: url(/IntegrityWeb/extjs/resources/img/table_remove.gif) !important;
+}
+.table_add{
+	background-image: url(/IntegrityWeb/extjs/resources/img/table_add.png) !important;
+}
+.table_save{
+	background-image: url(/IntegrityWeb/extjs/resources/img/tabel_save.png) !important;
+}
+.table_find{
+	background-image: url(/IntegrityWeb/extjs/resources/img/table_find3.png) !important;
+	
+}
