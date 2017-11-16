@@ -29,7 +29,7 @@ public class WebTestController
 		map.put("name", "ÄãÊÇÉµ±Æ");
 		model.addAttribute("age", 22);
 		request.setAttribute("sex", "ÄĞ");
-		return "test/index";
+		return "test/doTest";
 	}
 	
 	@SuppressWarnings("unused")
