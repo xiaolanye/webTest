@@ -8,7 +8,7 @@
 </head>
 <body style="padding:0 20px;">
     <div id="editor-container" class="container">
-        <div id="editor-trigger"><p>徐苏红是傻逼</p></div>
+        <div id="editor-trigger"><p>${name }</p></div>
     </div>
 
     <script type="text/javascript" src="../wangEditor-2.1.22/dist/js/lib/jquery-1.10.2.min.js"></script>

@@ -19,25 +19,26 @@ import com.web.service.ITestService;
 @RequestMapping(value = "test")
 public class WebTestController
 {
-	@Autowired
-	private ITestService testService;
-	
-	@RequestMapping(value = "doTest",method = RequestMethod.GET)
-	public String doTest(Map<String,Object> map,Model model,HttpServletRequest request)
-	{
-		testService.doTest();
-		map.put("name", "ÄãÊÇÉµ±Æ");
-		model.addAttribute("age", 22);
-		request.setAttribute("sex", "ÄÐ");
-		return "test/doTest";
-	}
-	
-	@SuppressWarnings("unused")
-	@RequestMapping(value = "postTest",method = RequestMethod.POST)
-	public String postTest(@RequestBody List<User> users)
-	{
-		int a = 1;
-		return "";
-	}
-	
+    @Autowired
+    private ITestService testService;
+
+    @RequestMapping(value = "doTest",method = RequestMethod.GET)
+    public String doTest(Map<String,Object> map,Model model,HttpServletRequest request)
+    {
+        testService.doTest();
+        map.put("name", "ä½ æ˜¯å‚»é€¼");
+        model.addAttribute("age", 22);
+        request.setAttribute("sex", "ç”·");
+        return "test/doTest";
+    }
+
+    @SuppressWarnings("unused")
+    @RequestMapping(value = "postTest",method = RequestMethod.POST)
+    public String postTest(@RequestBody List<User> users)
+    {
+        int a = 1;
+        return "";
+    }
+
 }
+
