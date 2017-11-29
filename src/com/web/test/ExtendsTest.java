@@ -6,6 +6,17 @@ import com.web.entity.Student;
 public class ExtendsTest {
     public static void main(String[] args) {
         Person p = new Student();
-        p.eat();
+        Student s = new Student();
+//        p.eat();
+//        s.eat();
+        doTest(s);
+    }
+
+    public static void doTest(Person p){
+        System.out.println("p");
+    }
+
+    public static void doTest(Student s){
+        System.out.println("s");
     }
 }
