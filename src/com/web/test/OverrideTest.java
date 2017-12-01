@@ -9,14 +9,14 @@ public class OverrideTest {
     }
 }
 class X {
-    public Person bark(){
-        return null;
+    public void bark(Person p){
+
     }
 }
 class Y extends X{
 
     @Override
-    public Student bark(){
-        return null;
+    public void bark(Person s){
+
     }
 }
