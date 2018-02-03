@@ -6,6 +6,16 @@ public class User {
 	
 	private String pwd;
 
+	private Double hair;
+
+	public Double getHair() {
+		return hair;
+	}
+
+	public void setHair(Double hair) {
+		this.hair = hair;
+	}
+
 	public User() {
 		
 	}

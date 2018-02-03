@@ -13,6 +13,7 @@
 
     <script type="text/javascript" src="../wangEditor-2.1.22/dist/js/lib/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="../wangEditor-2.1.22/dist/js/wangEditor.js"></script>
+    <script type="text/javascript" src="../js/test/test.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
         var editor = new wangEditor($('#editor-trigger'));
