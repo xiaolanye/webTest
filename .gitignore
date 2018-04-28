@@ -6,3 +6,5 @@ out/
 .classpath
 .project
 *.iml
+/bin/
+/build/
