@@ -4,9 +4,8 @@ $.post(
 		name:'TOm'
 	},
 	function (data) {
-		alert(data.hair);
-	},
-	"json"
+		alert(data);
+	}
 );
 
 

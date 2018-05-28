@@ -27,9 +27,9 @@ public class WebTestController
     public String doTest(Map<String,Object> map,Model model,HttpServletRequest request)
     {
         testService.doTest();
-        map.put("name", "你是傻逼");
+        map.put("name", "我我我");
         model.addAttribute("age", 22);
-        request.setAttribute("sex", "男");
+        request.setAttribute("sex", "a");
         return "test/doTest";
     }
 
@@ -37,21 +37,21 @@ public class WebTestController
     public String doTest1(Map<String,Object> map,Model model,HttpServletRequest request)
     {
         testService.doTest();
-        map.put("name", "你是傻逼");
+        map.put("name", "我我我");
         model.addAttribute("age", 22);
-        request.setAttribute("sex", "男");
+        request.setAttribute("sex", "b");
         return "test/doTest";
     }
 
     @RequestMapping(value = "postTest",method = RequestMethod.POST)
     @ResponseBody
-    public Double postTest(String name)
+    public String postTest(String name)
     {
         User user = new User();
         user.setHair(2.5D);
         user.setName(name);
         Double d = 2.5;
-        return d;
+        return "response:" + name;
     }
 
 }

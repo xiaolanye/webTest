@@ -16,7 +16,11 @@ public class Student extends Person{
         System.out.println("student go to school");
     }
 
-    public void eat () {
-        System.out.println("Student eat");
+    public void eat (Student s) {
+        System.out.println(this.getName() + s.getName());
+    }
+
+    public static void staticMethode(Student student){
+        System.out.println(student.getName());
     }
 }
