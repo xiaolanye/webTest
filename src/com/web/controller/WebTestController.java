@@ -51,6 +51,8 @@ public class WebTestController
         user.setHair(2.5D);
         user.setName(name);
         Double d = 2.5;
+        TestServiceImpl testService1 = new TestServiceImpl();
+        System.out.println(testService + "===" +testService1);
         return "response:" + name;
     }
 
