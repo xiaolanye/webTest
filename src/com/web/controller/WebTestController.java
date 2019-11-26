@@ -6,6 +6,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 import com.web.service.impl.TestServiceImpl;
+import com.web.util.ChuangLanSmsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -41,6 +42,8 @@ public class WebTestController
         map.put("name", "我我我");
         model.addAttribute("age", 22);
         request.setAttribute("sex", "b");
+        String result = ChuangLanSmsUtil.sendSmsByPost("http://2.32.40.34:8088/EpointSzSfj/rest/szsfj/getTjInfo", "{\"params\":{\"areaguid\":\"b3fd6ac3-0afe-413a-bcee-78062f85b544\",\"updatestart\":\"2019-10-29\",\"updateend\":\"2019-10-30\",\"batch\":\"1\"}}");
+//        SzMtptDetailRes res = JSONOb
         return "test/doTest";
     }
 
